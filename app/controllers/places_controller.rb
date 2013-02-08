@@ -3,7 +3,7 @@ class PlacesController < ApplicationController
     @places = Place.all
 
     respond_to do |format|
-      format.json { render json: @posts }
+      format.json { render json: @places }
     end
   end
 end
