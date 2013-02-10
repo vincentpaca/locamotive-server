@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'pg'
 gem "active_model_serializers", :git => "git://github.com/rails-api/active_model_serializers.git"
+gem 'geocoder'
 
 gem 'jquery-rails'
 gem 'haml-rails'

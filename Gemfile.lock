@@ -73,6 +73,7 @@ GEM
     fastercsv (1.5.5)
     formtastic (2.2.1)
       actionpack (>= 3.0)
+    geocoder (1.1.6)
     haml (3.1.7)
     haml-rails (0.3.5)
       actionpack (>= 3.1, < 4.1)
@@ -176,6 +177,7 @@ DEPENDENCIES
   active_model_serializers!
   activeadmin
   coffee-rails (~> 3.2.1)
+  geocoder
   haml-rails
   jquery-rails
   meta_search (>= 1.1.0.pre)
