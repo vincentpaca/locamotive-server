@@ -4,5 +4,5 @@ Locamotive::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   resources :restaurants
-  #root :to => 'welcome#index'
+  root :to => 'home#index'
 end
