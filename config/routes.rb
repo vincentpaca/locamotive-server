@@ -1,4 +1,7 @@
 Locamotive::Application.routes.draw do
+  resources :hotels
+
+
   resources :destinations
 
 
