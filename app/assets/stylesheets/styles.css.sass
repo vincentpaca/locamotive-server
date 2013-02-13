@@ -1,0 +1,116 @@
+/* ==============================
+/* ! Layout for desktop version
+/* ==============================
+
+body
+  font-family: sans-serif
+  font-size: 100%
+  background: #dbdbdb
+
+.cover-page
+  height: 450px
+  background: image-url("cover.jpg") no-repeat center bottom
+  background-size: cover-image
+
+.iphone
+  width: 319px
+  display: block
+  height: 634px
+  background: image-url("iphone.png") no-repeat
+
+.iphone-cut
+  width: 319px
+  height: 400px
+  background: image-url("iphone.png") no-repeat
+  background-position: 0 -636px
+  margin: 0 auto
+
+.iphone-for-mobile
+  display: none
+
+.header
+  padding-top: 40px
+
+.logo
+  width: 80px
+  height: 103px
+  display: inline-block
+  background: image-url("logo.png") no-repeat
+
+.logo-name
+  width: 468px
+  height: 84px
+  display: inline-block
+  background: image-url("logo-name.png") no-repeat
+
+.block
+  padding: 20px 0
+
+.page-center
+  text-align: center
+
+.download-section-for-mobile
+  display: none
+
+.header h2
+  font-size: 1.2em
+  font-weight: 100
+  color: #fff
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2)
+
+.download-links
+  padding-top: 120px
+  text-align: center
+
+.download-link
+  background: image-url("download-button.png") no-repeat
+  width: 124px
+  height: 39px
+  display: inline-block
+  &.ios
+    background-position: 0 0
+    margin-right: 20px
+  &.google
+    background-position: 0 -41px
+
+/* =============================
+/* ! Layout for mobile version
+/* =============================
+
+@media handheld, only screen and (max-width: 767px)
+  body!
+  .iphone-for-desktop
+    display: none
+  .iphone-for-mobile
+    display: block
+  .logo-name
+    width: 300px
+    height: 56px
+    background-size: 100%
+  .header
+    height: 850px
+    padding-top: 20px
+  .block
+    padding: 10px 0
+  .iphone-cut
+    height: 496px
+  .download-links
+    display: none
+    &.download-section-for-mobile
+      display: block
+    padding: 15px 0
+
+@media handheld, only screen and (max-width: 846px)
+  .logo-name
+    width: 300px
+    background-size: 100%
+
+/* ==========================================
+/* ! Provide higher res assets for iPhone 4
+/* ==========================================
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+  /*	.logo {
+   *		background: url(logo2x.jpg) no-repeat;
+   *		background-size: 212px 303px;
+   *	}
