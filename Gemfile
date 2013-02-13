@@ -7,6 +7,7 @@ gem 'geocoder'
 
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'cloudinary'
 
 gem 'activeadmin'
 gem 'sass-rails',   '~> 3.2.3'
